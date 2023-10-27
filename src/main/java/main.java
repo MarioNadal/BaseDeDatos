@@ -6,6 +6,7 @@ import java.sql.Statement;
 
 public class main {
     public static void main(String[]args) {
+        //Con  mySQL
         try(Connection miCon = ConexionBD.conectar("miBD")){
             //Crear la tabla departamentos
             String tablaDep = "CREATE TABLE departamentos (\n" +
