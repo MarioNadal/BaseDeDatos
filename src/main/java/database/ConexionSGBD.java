@@ -6,8 +6,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexionSGBD {
-    private static final String URL = "jdbc:mysql://localhost:6606";
-    private static final String USUARIO = "root";
+    private static final String URL = "jdbc:postgresql://localhost:8432/";
+    private static final String USUARIO = "postgres";
     private static final String CLAVE = "admin";
 
     public static Connection conectar(){
