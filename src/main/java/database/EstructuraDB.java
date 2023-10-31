@@ -10,7 +10,7 @@ public class EstructuraDB {
         try(Connection miCon = ConexionSGBD.conectar()){
             //Crear la base de datos
             Statement crearBD = miCon.createStatement();
-            crearBD.executeUpdate("CREATE DATABASE miBD");
+            crearBD.executeUpdate("CREATE DATABASE mibd");
         }catch(SQLException ex){
             System.out.println("Error al conectar." + ex.getMessage());
         }
